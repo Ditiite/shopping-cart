@@ -1,11 +1,15 @@
 .container {
     margin-top: 50px;
-    width: 600px;
+    width: 650px;
     box-shadow: 2px 2px 12px  #B4B5B6;
     font-family: 'PT Sans', sans-serif;
     border-radius: 5px;
 }
-
+/* .col-2,
+.col-5,
+.col-1 {
+    border: 1px solid black;
+} */
 .row {
     border: 1px solid silver;
     padding-top: 15px;
@@ -27,14 +31,34 @@ img {
 }
 
 /** Input **/
-
+.row .input {
+    padding: 0;
+    border: none;
+    text-align: center;
+    margin: 0;
+}
+.plus,
+.minus {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}
 
 
 .count {
-    width: 50px;
+    width: 30px;
+    text-align: center;
 }
 
 
 .btn {
     float: right;
+}
+/***** Closing button ****/
+.col-1{
+    width: 15px !important;
+    padding: 0;
+}
+.glyphicon-remove {
+    padding: 0;
 }

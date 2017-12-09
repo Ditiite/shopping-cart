@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/index.js" ></script>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <script src="https://use.fontawesome.com/3c6f30056f.js"></script>
         <title>Shopping cart</title>
     </head>
 
@@ -37,19 +38,21 @@
 
                 <div class="col-2">
                     <div class="row input">
-                        <input type="button" value="-" class="minus" >
+                        <span  value="-" class="minus">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </span>
                         <input type="text" value="1" class="count">
-                        <input type="button" value="+" class="plus"> 
+                        <span value="+" class="plus">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
                     </div>                            
                 </div>
                 <div class="col-2">
                     <p class="sum">€<span class="price"></span></p>                        
                 </div>
 
-                <div>
-                    <button type="button">
-                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                    </button>    
+                <div class="col-1">                    
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>                       
                 </div>
             </div>
 
@@ -65,9 +68,13 @@
     
                 <div class="col-2">
                     <div class="row input">
-                        <input type="button" value="-" class="minus" >
-                        <input type="text" value="1" class="count">
-                        <input type="button" value="+" class="plus"> 
+                        <span value="-" class="minus">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </span>
+                        <input type="text" value="1" class="count ">
+                        <span value="+" class="plus">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </span>
                     </div>                            
                 </div>
 
@@ -75,10 +82,8 @@
                     <p class="sum">€<span class="price"></span></p>                        
                 </div>
 
-                <div>
-                    <button type="button">
-                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                    </button>    
+                <div class="col-1">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                 </div>
             </div>
 
