@@ -8,13 +8,106 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
         <!-- My scripts/styles -->
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/index.js" ></script>
-
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <title>Shopping cart</title>
     </head>
+
     <body>
-        <h1>Hello</h1>
+        <div class="container shopping-cart">
+            <div class="row header">
+                <div class="col-7">Product</div>
+                <div class="col-2">Quantity</div>
+                <div class="col-2">Price</div>
+            </div>
+
+            <div class="row product" data-unit-price="100">
+                <div class="col-2 image">
+                    <img src="https://cdn.shopify.com/s/files/1/0377/2037/products/W.MiniBlvd.Jane.Front_1024x1024.jpg?v=1510688968">
+                </div>
+
+                <div class="col-5">                    
+                    <h4>Lexington</h4>
+                    <p>Avenus series - 28 mm</p>
+                </div>
+
+                <div class="col-2">
+                    <div class="row input">
+                        <input type="button" value="-" class="minus" >
+                        <input type="text" value="1" class="count">
+                        <input type="button" value="+" class="plus"> 
+                    </div>                            
+                </div>
+                <div class="col-2">
+                    <p class="sum">€<span class="price"></span></p>                        
+                </div>
+
+                <div>
+                    <button type="button">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>    
+                </div>
+            </div>
+
+            <div class="row product" data-unit-price="15">
+                <div class="col-2 image">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81v6zJmvGYL._SL1180_.jpg">
+                </div>
+
+                <div class="col-5">
+                    <h4>Diamond ring evening bag</h4>
+                    <p>Dazzling gold crystal ring diamond evening bag clutch purse party bridal prom</p>
+                </div>
+    
+                <div class="col-2">
+                    <div class="row input">
+                        <input type="button" value="-" class="minus" >
+                        <input type="text" value="1" class="count">
+                        <input type="button" value="+" class="plus"> 
+                    </div>                            
+                </div>
+
+                <div class="col-2">
+                    <p class="sum">€<span class="price"></span></p>                        
+                </div>
+
+                <div>
+                    <button type="button">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>    
+                </div>
+            </div>
+
+            <div class="row">  
+
+                <div class="col-6">
+                    <select id="mail-option">
+                        <option value="0">Choose delivery</option>
+                        <option value="2.5">RegularMail (€2.50)</option>
+                        <option value="3.49">AirMail (€3.49)</option>                        
+                        <option value="10.00">ExpressMail (€10.00)</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <p class="total-items"><span class="amount"></span> items</p>
+                </div>
+
+                <div class="col">
+                    <p class="total-price">Total: €<span class="price"></span></p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <button>checkout</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

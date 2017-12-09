@@ -1,4 +1,39 @@
-body {
-    background: white;
+.container {
+    margin-top: 50px;
+    width: 600px;
+    box-shadow: 2px 2px 12px  #B4B5B6;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 5px;
 }
 
+.row {
+    border: 1px solid silver;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/** Header **/
+.header {
+    padding-left: 10px;
+}
+
+/*****************
+***** PRODUCT ****
+*****************/
+
+/** Image **/
+img {
+    width: 60px;
+}
+
+/** Input **/
+/** Mute original form*/
+
+.count {
+    width: 50px;
+}
+
+
+.btn {
+    float: right;
+}
