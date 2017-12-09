@@ -14,6 +14,7 @@ $('document').ready(function () {
         var countEl = productRow.querySelector(".count");
         var minusBtn = productRow.querySelector(".minus");
         var plusBtn = productRow.querySelector(".plus");
+        var deleteBtn = productRow.querySelector('.glyphicon-remove');
 
         var priceLabel =  productRow.querySelector(".sum > .price");
         
@@ -22,6 +23,7 @@ $('document').ready(function () {
             index: products.length,
             unitPrice: Number(productRow.dataset.unitPrice),
             count: 1,
+            isDeleted: false,
             price: null
         };
 
@@ -56,6 +58,13 @@ $('document').ready(function () {
         function calculatePrice() {
             product.price = product.unitPrice * product.count;
         }
+
+        //Remove row when press "x" button
+        $(deleteBtn).click(function() {
+            $(productRow).remove();
+            product.isDeleted = true;
+            updateSummary();
+        });
     });
 
     // Run once for the first time. Also should run when product changes
@@ -82,6 +91,8 @@ $('document').ready(function () {
         price = price.toFixed(2);
         return price;
     }
+
+
 });
 
 /**
@@ -94,6 +105,9 @@ function getTotalSummary(products) {
     var amount = 0;
 
     products.forEach(function(product) {
+        if (product.isDeleted) {
+            return;
+        }
         total = total + product.price;
         amount = amount + product.count
     });
@@ -103,3 +117,4 @@ function getTotalSummary(products) {
         amount: amount
     }
 }
+
