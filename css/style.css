@@ -4,6 +4,7 @@
     box-shadow: 2px 2px 12px  #B4B5B6;
     font-family: 'PT Sans', sans-serif;
     border-radius: 5px;
+    color: #003854;
 }
 /* .col-2,
 .col-5,
@@ -21,17 +22,27 @@
     padding-left: 10px;
 }
 
+.price-header {
+    text-align: center;
+}
+
+
 /*****************
 ***** PRODUCT ****
 *****************/
 
-/** Image **/
+/*** IMAGE ***/
 img {
     width: 60px;
     padding: 10px;
 }
 
-/** Input **/
+.image{
+    width: 15px !important;
+    padding: 0;
+}
+
+/*** INPUT STYLE ***/
 .row .input {
     padding: 0;
     border: none; 
@@ -50,20 +61,23 @@ img {
     color: #789FB3;   
 }
 
-
 .count {
     width: 30px;
     text-align: center;
+    border: 1px solid #789FB3;
+    color: #789FB3;
 }
 
-.image{
-    width: 15px !important;
-    padding: 0;
+/*** PRICE ***/
+.sum {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
 }
-.btn {
-    float: right;
-}
-/***** Closing button ****/
+
+
+
+/***** CLOSING BUTTON ****/
 
 .glyphicon-remove {
     padding: 0;
@@ -75,7 +89,21 @@ img {
     text-shadow: 1px 1px 1px silver;
 }
 
+/**** FINAL ROW ****/
+.total-items {
+    width: 80px ;
+}
+.sum-total {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.pad-right {
+    padding-right: 20px;
+}
 
+/*** COL SIZE ***/
 .col-1 {
     width: 5%;
 }
