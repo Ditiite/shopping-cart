@@ -5,10 +5,18 @@
     font-family: 'PT Sans', sans-serif;
     border-radius: 5px !important;
     color: #003854;
+    z-index: 1;
 }
 
+hr {
+    border-color: #C7D8E0;
+    width: 510px;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .row {
-    border: 1px solid silver;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -102,12 +110,13 @@ img {
 .total-items {
     width: 80px ;
 }
+
 .sum-total {
     text-align: center;
     font-size: 15px;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
+
 .pad-right {
     padding-right: 20px;
 }
@@ -118,14 +127,46 @@ img {
     border-radius: 3px;
     color: #789FB3;
     outline-color: #789FB3;
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
-#mail-option option:hover {
-    background-color: #789FB3 !important;
+/*** CHECKOUT BUTTON ***/
+.checkout {
     color: white;
-    
+    background-color: #789FB3;
+    height: 35px;
+    width: 115px;
+    font-size: 18px;
+    margin-right: 50px;
+    float: right;
+    border: none;
+    border-radius: 3px;
+    outline-color: #789FB3;
 }
+
+.checkout:active {
+    height: 30px;
+    width: 90px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-right: 60px;
+    outline-color:#789FB3;
+}
+.checkout:focus {
+    outline-color: #789FB3;
+}
+.last {
+    padding: 10px;
+    height: 60px;
+}
+
+/******************
+***FINAL TEXT ****
+*****************/
+.final-text {
+    z-index: 0;
+}
+
 
 /*** COL SIZE ***/
 .col-1 {

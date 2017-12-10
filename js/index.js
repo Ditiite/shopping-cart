@@ -3,20 +3,20 @@
 //Changind amount of items
 $('document').ready(function () {
     var products = []; // { price, count }
-    var totalPriceLabel = document.querySelector(".total-price > .price");
-    var totalAmountLabel = document.querySelector(".total-items > .amount");
+    var totalPriceLabel = document.querySelector('.total-price > .price');
+    var totalAmountLabel = document.querySelector('.total-items > .amount');
     var mailOptionEl = document.querySelector('#mail-option');
 
     // Initialize each product
     $('.product').each(function () {
         var productRow = this;
         
-        var countEl = productRow.querySelector(".count");
-        var minusBtn = productRow.querySelector(".minus");
-        var plusBtn = productRow.querySelector(".plus");
+        var countEl = productRow.querySelector('.count');
+        var minusBtn = productRow.querySelector('.minus');
+        var plusBtn = productRow.querySelector('.plus');
         var deleteBtn = productRow.querySelector('.glyphicon-remove');
 
-        var priceLabel =  productRow.querySelector(".sum > .price");
+        var priceLabel =  productRow.querySelector('.sum > .price');
         
         // Create a new product
         var product = {
