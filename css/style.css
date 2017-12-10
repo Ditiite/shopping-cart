@@ -5,7 +5,6 @@
     font-family: 'PT Sans', sans-serif;
     border-radius: 5px !important;
     color: #003854;
-    z-index: 1;
 }
 
 hr {
@@ -163,8 +162,13 @@ img {
 /******************
 ***FINAL TEXT ****
 *****************/
-.final-text {
-    z-index: 0;
+#final-text {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    display: none;
+    font-size: 40px;
+    color: #024e75;    
 }
 
 

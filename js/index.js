@@ -117,3 +117,11 @@ function getTotalSummary(products) {
         amount: amount
     }
 }
+
+/**
+ * Close shopping cart when press checkout and show text 'Have a nice day'
+ */
+function demoDisplay() {
+    document.getElementById('closing').style.display ="none";
+    document.getElementById('final-text').style.display ="block";
+}
