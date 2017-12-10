@@ -117,4 +117,3 @@ function getTotalSummary(products) {
         amount: amount
     }
 }
-

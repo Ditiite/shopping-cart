@@ -3,14 +3,10 @@
     width: 650px;
     box-shadow: 2px 2px 12px  #B4B5B6;
     font-family: 'PT Sans', sans-serif;
-    border-radius: 5px;
+    border-radius: 5px !important;
     color: #003854;
 }
-/* .col-2,
-.col-5,
-.col-1 {
-    border: 1px solid black;
-} */
+
 .row {
     border: 1px solid silver;
     padding-top: 15px;
@@ -20,6 +16,7 @@
 /** Header **/
 .header {
     padding-left: 10px;
+    background-color: #C7D8E0;
 }
 
 .price-header {
@@ -58,14 +55,29 @@ img {
     padding-top: 5px;
     vertical-align: middle;
     border: 1px solid #789FB3;
-    color: #789FB3;   
+    color: #789FB3; 
+}
+.plus {      
+    border-radius:0 3px 3px 0;
+    border-left: none;
 }
 
+.minus {
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+}
 .count {
     width: 30px;
     text-align: center;
     border: 1px solid #789FB3;
     color: #789FB3;
+    outline-color: #789FB3;
+    
+}
+
+.plus:active,
+.minus:active {
+    font-size: 13px;
 }
 
 /*** PRICE ***/
@@ -75,10 +87,7 @@ img {
     font-weight: bold;
 }
 
-
-
 /***** CLOSING BUTTON ****/
-
 .glyphicon-remove {
     padding: 0;
     color: #789FB3;
@@ -101,6 +110,21 @@ img {
 }
 .pad-right {
     padding-right: 20px;
+}
+
+/*** DELIVERY ***/
+#mail-option {
+    border: 1px solid #789FB3;
+    border-radius: 3px;
+    color: #789FB3;
+    outline-color: #789FB3;
+    margin-left: 50px;
+}
+
+#mail-option option:hover {
+    background-color: #789FB3 !important;
+    color: white;
+    
 }
 
 /*** COL SIZE ***/
