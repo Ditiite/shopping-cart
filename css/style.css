@@ -28,20 +28,26 @@
 /** Image **/
 img {
     width: 60px;
+    padding: 10px;
 }
 
 /** Input **/
 .row .input {
     padding: 0;
-    border: none;
+    border: none; 
     text-align: center;
     margin: 0;
+    width: 95px;
 }
 .plus,
 .minus {
     height: 30px;
     width: 30px;
     padding: 0;
+    padding-top: 5px;
+    vertical-align: middle;
+    border: 1px solid #789FB3;
+    color: #789FB3;   
 }
 
 
@@ -50,15 +56,39 @@ img {
     text-align: center;
 }
 
-
+.image{
+    width: 15px !important;
+    padding: 0;
+}
 .btn {
     float: right;
 }
 /***** Closing button ****/
-.col-1{
-    width: 15px !important;
-    padding: 0;
-}
+
 .glyphicon-remove {
     padding: 0;
+    color: #789FB3;
+}
+
+.glyphicon-remove:hover {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px silver;
+}
+
+
+.col-1 {
+    width: 5%;
+}
+.col-2 {
+    width: 10%;
+    padding: 0;
+}
+
+.col-3 {
+    width: 10%;
+    padding: 0;
+}
+
+.col-5 {
+    width: 50%;
 }
