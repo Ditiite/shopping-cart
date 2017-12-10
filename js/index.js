@@ -122,6 +122,10 @@ function getTotalSummary(products) {
  * Close shopping cart when press checkout and show text 'Have a nice day'
  */
 function demoDisplay() {
-    document.getElementById('closing').style.display ="none";
+    document.getElementById('closing').style.opacity = 0;
     document.getElementById('final-text').style.display ="block";
+    setTimeout(function () {
+        document.getElementById('final-text').style.opacity = 1;
+    }, 500);
+    
 }
